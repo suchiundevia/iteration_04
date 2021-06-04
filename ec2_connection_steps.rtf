@@ -1,0 +1,186 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red18\green19\blue24;\red255\green255\blue255;
+}
+{\*\expandedcolortbl;;\csgray\c0;\cssrgb\c8627\c9804\c12157;\cssrgb\c100000\c100000\c100000;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf2 \CocoaLigature0 ssh -i 722_aws_key_pair.pem ubuntu@
+\f1 \cf3 \cb4 \expnd0\expndtw0\kerning0
+\CocoaLigature1 ec2-34-227-143-252.compute-1.amazonaws.com
+\f0 \cf2 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 \
+\
+jupyter notebook\
+\
+https://3.82.214.120:8888/?token=b94c686566aeba928ce47c4ba0b4d4c59ce71035e1e34716&token=b94c686566aeba928ce47c4ba0b4d4c59ce71035e1e34716\
+\
+import findspark\
+findspark.init('/home/ubuntu/spark-2.1.1-bin-hadoop2.7')\
+import pyspark\
+from pyspark.sql import SparkSession\
+import pyspark.sql.functions as SparkFunctions\
+from pyspark.sql.types import IntegerType\
+from pyspark.sql.types import FloatType\
+from pyspark.sql.types import StringType\
+spark = SparkSession.builder.appName('housing').getOrCreate()\
+import pandas\
+import matplotlib.pyplot as plot\
+\
+income_data = spark.read.format("csv").options(header="true").load("datasets/income_data.csv")\
+#income_data.show()\
+income_data = income_data.withColumn("income_year", income_data["income_year"].cast(IntegerType()))\
+income_data = income_data.withColumn("income_regions", income_data["income_regions"].cast(StringType()))\
+income_data = income_data.withColumn("income_age_group", income_data["income_age_group"].cast(StringType()))\
+income_data = income_data.withColumn("income_value", income_data["income_value"].cast(FloatType()))\
+income_data.printSchema()\
+#income_data.columns\
+#income_data.describe().show()\
+#income_data.select("income_year").distinct().show()\
+#income_data.select("income_regions").distinct().show()\
+#income_data.select("income_age_group").distinct().show()\
+\
+expenditure_data = spark.read.format("csv").options(header="true").load("datasets/expenditure_data.csv")\
+#expenditure_data.show()\
+expenditure_data = expenditure_data.withColumn("expenditure_year", expenditure_data["expenditure_year"].cast(IntegerType()))\
+expenditure_data = expenditure_data.withColumn("expenditure_regions", expenditure_data["expenditure_regions"].cast(StringType()))\
+expenditure_data = expenditure_data.withColumn("expenditure_category", expenditure_data["expenditure_category"].cast(StringType()))\
+expenditure_data = expenditure_data.withColumn("expenditure_value", expenditure_data["expenditure_value"].cast(FloatType()))\
+expenditure_data.printSchema()\
+#expenditure_data.columns\
+#expenditure_data.describe().show()\
+#expenditure_data.select("expenditure_year").distinct().show()\
+#expenditure_data.select("expenditure_regions").distinct().show()\
+#expenditure_data.select("expenditure_category").distinct().show()\
+\
+sales_data = spark.read.format("csv").options(header="true").load("datasets/sales_data.csv")\
+#sales_data.show()\
+sales_data = sales_data.withColumn("sale_year", sales_data["sale_year"].cast(IntegerType()))\
+sales_data = sales_data.withColumn("sale_region", sales_data["sale_region"].cast(StringType()))\
+sales_data = sales_data.withColumn("gross_sale_price", sales_data["gross_sale_price"].cast(FloatType()))\
+sales_data.printSchema()\
+#sales_data.columns\
+#sales_data.describe().show()\
+#\
+#cpi_data = spark.read.format("csv").options(header="true").load("datasets/cpi_data.csv")\
+#cpi_data.show()\
+#cpi_data.printSchema()\
+#cpi_data.columns\
+#cpi_data.describe().show()\
+#cpi_data.select("cpi_series_id").distinct().show()\
+#cpi_data.select("cpi_year").distinct().show()\
+#\
+#hpi_data = spark.read.format("csv").options(header="true").load("datasets/hpi_data.csv")\
+#hpi_data.show()\
+#hpi_data.printSchema()\
+#hpi_data.columns\
+#hpi_data.describe().show()\
+#hpi_data.select("hpi_series_id").distinct().show()\
+#hpi_data.select("hpi_year").distinct().show()\
+\
+def spark_dataframe_shape(dataFrame):\
+    return (dataFrame.count(), len(dataFrame.columns))\
+pyspark.sql.dataframe.DataFrame.shape = spark_dataframe_shape\
+print(income_data.shape())\
+#print(expenditure_data.shape())\
+#print(sales_data.shape())\
+#print(cpi_data.shape())\
+#print(hpi_data.shape())\
+\
+# INCOME DATA PREPARATION\
+income_data = income_data.filter("income_age_group == '20 to 24' OR income_age_group == '25 to 29' OR income_age_group == '30 to 34'" )\
+income_data.select("income_age_group").distinct().show()\
+income_data.select([SparkFunctions.count(SparkFunctions.when(SparkFunctions.col(c).isNull(), c)).alias(c) for c in income_data.columns]).show()\
+income_data = income_data.filter(income_data.income_value.isNotNull())\
+income_data.show()\
+print(income_data.shape())\
+# Assign and add age group code  \
+income_data = income_data.withColumn("age_group_code", \
+                             SparkFunctions.when((SparkFunctions.col("income_age_group") == "20 to 24"), 1)\
+                                                         .when((SparkFunctions.col("income_age_group") == "25 to 29"), 2)\
+                                                         .otherwise(3))\
+income_data.select("age_group_code").distinct().show()\
+# Assign and add region code  \
+income_data = income_data.withColumn("income_region_code", \
+                             SparkFunctions.when((SparkFunctions.col("income_regions") == "Northland Region"), "r002")\
+                                                         .when((SparkFunctions.col("income_regions") == "Auckland Region"), "r001")\
+                                                         .when((SparkFunctions.col("income_regions") == "Waikato Region"), "r002")\
+                                                         .when((SparkFunctions.col("income_regions") == "Bay of Plenty Region"), "r002")\
+                                                         .when((SparkFunctions.col("income_regions") == "Gisborne/Hawkes Bay Regions"), "r002")\
+                                                         .when((SparkFunctions.col("income_regions") == "Taranaki Region"), "r002")\
+                                                         .when((SparkFunctions.col("income_regions") == "Manawatu-Wanganui Region"), "r002")\
+                                                         .when((SparkFunctions.col("income_regions") == "Wellington Region"), "r003")\
+                                                         .when((SparkFunctions.col("income_regions") == "Nelson/Tasman/Marlborough/West Coast Regions"), "r005")\
+                                                         .when((SparkFunctions.col("income_regions") == "Canterbury Region"), "r004")\
+                                                         .when((SparkFunctions.col("income_regions") == "Otago Region"), "r005")\
+                                                         .when((SparkFunctions.col("income_regions") == "Southland Region"), "r005")\
+                                                         .otherwise("r000"))\
+income_data.select("income_region_code").distinct().show\
+income_data = income_data.drop("income_regions")\
+income_data.show(5)\
+income_data =  income_data.groupBy("income_region_code", "age_group_code", "income_year").mean("income_value")\
+income_data.show()\
+# EXPENDITURE DATA PREPARATION\
+expenditure_data = expenditure_data.filter("expenditure_category == 'Total'" )\
+expenditure_data.select("expenditure_category").distinct().show()\
+expenditure_data = expenditure_data.withColumn("expenditure_per_person", SparkFunctions.col("expenditure_value") / 3)\
+expenditure_data.show()\
+expenditure_data = expenditure_data.drop("expenditure_category", "expenditure_value")\
+expenditure_data.show()\
+# Assign and add region code  \
+expenditure_data = expenditure_data.withColumn("expenditure_region_code", \
+                             SparkFunctions.when((SparkFunctions.col("expenditure_regions") == "Auckland"), "r001")\
+                                                         .when((SparkFunctions.col("expenditure_regions") == "Rest of North Island"), "r002")\
+                                                         .when((SparkFunctions.col("expenditure_regions") == "Wellington"), "r003")\
+                                                         .when((SparkFunctions.col("expenditure_regions") == "Canterbury"), "r004")\
+                                                         .when((SparkFunctions.col("expenditure_regions") == "Rest of South Island"), "r005")\
+                                                         .otherwise("r000"))\
+expenditure_data.select("expenditure_region_code").distinct().show()\
+income_data.show()\
+income_data = income_data.withColumnRenamed("income_region_code", "income_region_code")\
+income_data = income_data.withColumnRenamed("age_group_code", "age_group_code")\
+income_data = income_data.withColumnRenamed("income_year", "income_year")\
+income_data = income_data.withColumnRenamed("avg(income_value)", "average_weekly_income")\
+income_data.printSchema()\
+expenditure_data = expenditure_data.withColumnRenamed("expenditure_regions", "expenditure_regions")\
+expenditure_data = expenditure_data.withColumnRenamed("expenditure_region_code", "expenditure_region_code")\
+expenditure_data = expenditure_data.withColumnRenamed("expenditure_per_person", "expenditure_per_person")\
+expenditure_data = expenditure_data.withColumnRenamed("expenditure_year", "expenditure_year")\
+expenditure_data.printSchema()\
+merge_income_expenditure = income_data.join(expenditure_data, (income_data.income_region_code == expenditure_data.expenditure_region_code) & (income_data.income_year == expenditure_data.expenditure_year))\
+merge_income_expenditure.show(5)\
+merge_income_expenditure = merge_income_expenditure.drop("expenditure_region_code", "income_year")\
+merge_income_expenditure.show(5)\
+# SALES DATA PREPARATION\
+sales_data = sales_data.drop("sales_qv_id", \
+                                                  "sale_id", \
+                                                  "sales_city", \
+                                                  "sale_region_id", \
+                                                  "sale_date", \
+                                                  "net_sale_price", \
+                                                  "capital_value", \
+                                                  "land_value", \
+                                                  "improvement_value", \
+                                                  "house_age")\
+sales_data.show(5)\
+# Assign and add region code  \
+sales_data = sales_data.withColumn("sales_region_code", \
+                             SparkFunctions.when((SparkFunctions.col("sale_region") == "Auckland (Unitary)"), "r001")\
+                                                         .when((SparkFunctions.col("sale_region") == "Bay of Plenty Region"), "r002")\
+                                                         .when((SparkFunctions.col("sale_region") == "Gisborne (Unitary)"), "r002")\
+                                                         .when((SparkFunctions.col("sale_region") == "Hawkes Bay Region"), "r002")\
+                                                         .when((SparkFunctions.col("sale_region") == "Manawatu-Whanganui Region"), "r002")\
+                                                         .when((SparkFunctions.col("sale_region") == "Northland Region"), "r002")\
+                                                         .when((SparkFunctions.col("sale_region") == "Taranaki Region"), "r002")\
+                                                         .when((SparkFunctions.col("sale_region") == "Waikato Region"), "r002")\
+                                                         .when((SparkFunctions.col("sale_region") == "Wellington Region"), "r003")\
+                                                         .when((SparkFunctions.col("sale_region") == "Canterbury Region"), "r004")\
+                                                         .when((SparkFunctions.col("sale_region") == "Tasman Nelson Marlborough"), "r005")\
+                                                         .when((SparkFunctions.col("sale_region") == "West Coast Region"), "r005")\
+                                                         .otherwise("r000"))\
+sales_data.show(5)\
+sales_data = sales_data.drop("sale_region")\
+sales_data =  sales_data.groupBy("sale_year", "sales_region_code").mean("gross_sale_price")\
+income_data.show()\
+}

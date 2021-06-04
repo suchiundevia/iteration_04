@@ -1,0 +1,351 @@
+﻿expenditure_regions,expenditure_year,expenditure_category,expenditure_value
+Auckland,2007,Total,1063.7
+Auckland,2010,Total,1142.6
+Auckland,2013,Total,1265.8
+Auckland,2016,Total,1533.3
+Auckland,2019,Total,1548.9
+Wellington,2007,Total,1106.5
+Wellington,2010,Total,1233.9
+Wellington,2013,Total,1241.5
+Wellington,2016,Total,1255
+Wellington,2019,Total,1474.7
+Rest of North Island,2007,Total,852.2
+Rest of North Island,2010,Total,874.6
+Rest of North Island,2013,Total,978.1
+Rest of North Island,2016,Total,1091.3
+Rest of North Island,2019,Total,1190.1
+Canterbury,2007,Total,930.8
+Canterbury,2010,Total,1004.2
+Canterbury,2013,Total,1080.8
+Canterbury,2016,Total,1185
+Canterbury,2019,Total,1323.7
+Rest of South Island,2007,Total,937.6
+Rest of South Island,2010,Total,937.2
+Rest of South Island,2013,Total,988.1
+Rest of South Island,2016,Total,1097.1
+Rest of South Island,2019,Total,1148.3
+Auckland,2007,Food,182
+Auckland,2010,Food,198.3
+Auckland,2013,Food,217.7
+Auckland,2016,Food,255.2
+Auckland,2019,Food,262.9
+Wellington,2007,Food,180.4
+Wellington,2010,Food,202.5
+Wellington,2013,Food,199.1
+Wellington,2016,Food,227.8
+Wellington,2019,Food,260.2
+Rest of North Island,2007,Food,143.5
+Rest of North Island,2010,Food,156.6
+Rest of North Island,2013,Food,175
+Rest of North Island,2016,Food,184.6
+Rest of North Island,2019,Food,205.7
+Canterbury,2007,Food,156.5
+Canterbury,2010,Food,173.9
+Canterbury,2013,Food,187.3
+Canterbury,2016,Food,196.3
+Canterbury,2019,Food,236
+Rest of South Island,2007,Food,159.1
+Rest of South Island,2010,Food,168
+Rest of South Island,2013,Food,169.2
+Rest of South Island,2016,Food,192
+Rest of South Island,2019,Food,202.4
+Auckland,2007,"Alcoholic beverages, tobacco and illicit drugs",26.8
+Auckland,2010,"Alcoholic beverages, tobacco and illicit drugs",27.1
+Auckland,2013,"Alcoholic beverages, tobacco and illicit drugs",29.6
+Auckland,2016,"Alcoholic beverages, tobacco and illicit drugs",27.7
+Auckland,2019,"Alcoholic beverages, tobacco and illicit drugs",24.7
+Wellington,2007,"Alcoholic beverages, tobacco and illicit drugs",32.7
+Wellington,2010,"Alcoholic beverages, tobacco and illicit drugs",37.9
+Wellington,2013,"Alcoholic beverages, tobacco and illicit drugs",28
+Wellington,2016,"Alcoholic beverages, tobacco and illicit drugs",37.5
+Wellington,2019,"Alcoholic beverages, tobacco and illicit drugs",34.3
+Rest of North Island,2007,"Alcoholic beverages, tobacco and illicit drugs",22.5
+Rest of North Island,2010,"Alcoholic beverages, tobacco and illicit drugs",25.3
+Rest of North Island,2013,"Alcoholic beverages, tobacco and illicit drugs",26.9
+Rest of North Island,2016,"Alcoholic beverages, tobacco and illicit drugs",28.2
+Rest of North Island,2019,"Alcoholic beverages, tobacco and illicit drugs",29.3
+Canterbury,2007,"Alcoholic beverages, tobacco and illicit drugs",30.8
+Canterbury,2010,"Alcoholic beverages, tobacco and illicit drugs",35
+Canterbury,2013,"Alcoholic beverages, tobacco and illicit drugs",32.5
+Canterbury,2016,"Alcoholic beverages, tobacco and illicit drugs",35.9
+Canterbury,2019,"Alcoholic beverages, tobacco and illicit drugs",31.8
+Rest of South Island,2007,"Alcoholic beverages, tobacco and illicit drugs",33.6
+Rest of South Island,2010,"Alcoholic beverages, tobacco and illicit drugs",32.8
+Rest of South Island,2013,"Alcoholic beverages, tobacco and illicit drugs",34.5
+Rest of South Island,2016,"Alcoholic beverages, tobacco and illicit drugs",31.1
+Rest of South Island,2019,"Alcoholic beverages, tobacco and illicit drugs",35.1
+Auckland,2007,Clothing and footwear,38.7
+Auckland,2010,Clothing and footwear,29.7
+Auckland,2013,Clothing and footwear,31.9
+Auckland,2016,Clothing and footwear,46
+Auckland,2019,Clothing and footwear,39
+Wellington,2007,Clothing and footwear,31.7
+Wellington,2010,Clothing and footwear,40.9
+Wellington,2013,Clothing and footwear,36.9
+Wellington,2016,Clothing and footwear,35.9
+Wellington,2019,Clothing and footwear,49.6
+Rest of North Island,2007,Clothing and footwear,28.5
+Rest of North Island,2010,Clothing and footwear,24
+Rest of North Island,2013,Clothing and footwear,27.9
+Rest of North Island,2016,Clothing and footwear,29.2
+Rest of North Island,2019,Clothing and footwear,29.2
+Canterbury,2007,Clothing and footwear,41.7
+Canterbury,2010,Clothing and footwear,38.3
+Canterbury,2013,Clothing and footwear,37.7
+Canterbury,2016,Clothing and footwear,36.6
+Canterbury,2019,Clothing and footwear,46.1
+Rest of South Island,2007,Clothing and footwear,31.6
+Rest of South Island,2010,Clothing and footwear,32.7
+Rest of South Island,2013,Clothing and footwear,32.2
+Rest of South Island,2016,Clothing and footwear,34.1
+Rest of South Island,2019,Clothing and footwear,28.2
+Auckland,2007,Housing and household utilities,224.6
+Auckland,2010,Housing and household utilities,313
+Auckland,2013,Housing and household utilities,335.9
+Auckland,2016,Housing and household utilities,419.9
+Auckland,2019,Housing and household utilities,440.6
+Wellington,2007,Housing and household utilities,288.1
+Wellington,2010,Housing and household utilities,321.3
+Wellington,2013,Housing and household utilities,309.4
+Wellington,2016,Housing and household utilities,285.9
+Wellington,2019,Housing and household utilities,372.8
+Rest of North Island,2007,Housing and household utilities,179.6
+Rest of North Island,2010,Housing and household utilities,195.5
+Rest of North Island,2013,Housing and household utilities,231.9
+Rest of North Island,2016,Housing and household utilities,264.8
+Rest of North Island,2019,Housing and household utilities,286.3
+Canterbury,2007,Housing and household utilities,191.6
+Canterbury,2010,Housing and household utilities,223.3
+Canterbury,2013,Housing and household utilities,227.4
+Canterbury,2016,Housing and household utilities,319
+Canterbury,2019,Housing and household utilities,298.2
+Rest of South Island,2007,Housing and household utilities,192.9
+Rest of South Island,2010,Housing and household utilities,213.8
+Rest of South Island,2013,Housing and household utilities,224.9
+Rest of South Island,2016,Housing and household utilities,267.3
+Rest of South Island,2019,Housing and household utilities,265.6
+Auckland,2007,Household contents and services,50.5
+Auckland,2010,Household contents and services,43.5
+Auckland,2013,Household contents and services,47.6
+Auckland,2016,Household contents and services,52.9
+Auckland,2019,Household contents and services,54.9
+Wellington,2007,Household contents and services,54.3
+Wellington,2010,Household contents and services,56.7
+Wellington,2013,Household contents and services,57.9
+Wellington,2016,Household contents and services,45.4
+Wellington,2019,Household contents and services,55.3
+Rest of North Island,2007,Household contents and services,47.8
+Rest of North Island,2010,Household contents and services,40.8
+Rest of North Island,2013,Household contents and services,44.8
+Rest of North Island,2016,Household contents and services,42.6
+Rest of North Island,2019,Household contents and services,51.8
+Canterbury,2007,Household contents and services,46.7
+Canterbury,2010,Household contents and services,49.3
+Canterbury,2013,Household contents and services,56.5
+Canterbury,2016,Household contents and services,49.4
+Canterbury,2019,Household contents and services,45.4
+Rest of South Island,2007,Household contents and services,54.7
+Rest of South Island,2010,Household contents and services,44.3
+Rest of South Island,2013,Household contents and services,48.5
+Rest of South Island,2016,Household contents and services,45.2
+Rest of South Island,2019,Household contents and services,42.8
+Auckland,2007,Health,25.3
+Auckland,2010,Health,26.2
+Auckland,2013,Health,29
+Auckland,2016,Health,33
+Auckland,2019,Health,42.5
+Wellington,2007,Health,25.9
+Wellington,2010,Health,25.7
+Wellington,2013,Health,29.5
+Wellington,2016,Health,44.2
+Wellington,2019,Health,36.5
+Rest of North Island,2007,Health,23.3
+Rest of North Island,2010,Health,22.9
+Rest of North Island,2013,Health,24.9
+Rest of North Island,2016,Health,41.1
+Rest of North Island,2019,Health,39.9
+Canterbury,2007,Health,20.6
+Canterbury,2010,Health,23.5
+Canterbury,2013,Health,28.6
+Canterbury,2016,Health,36.5
+Canterbury,2019,Health,39.4
+Rest of South Island,2007,Health,23.6
+Rest of South Island,2010,Health,23.6
+Rest of South Island,2013,Health,25.3
+Rest of South Island,2016,Health,36.1
+Rest of South Island,2019,Health,53.8
+Auckland,2007,Transport,147.6
+Auckland,2010,Transport,144.4
+Auckland,2013,Transport,176.2
+Auckland,2016,Transport,214
+Auckland,2019,Transport,233.5
+Wellington,2007,Transport,133.1
+Wellington,2010,Transport,147.3
+Wellington,2013,Transport,163.6
+Wellington,2016,Transport,187.8
+Wellington,2019,Transport,240.3
+Rest of North Island,2007,Transport,143.8
+Rest of North Island,2010,Transport,121.2
+Rest of North Island,2013,Transport,136.1
+Rest of North Island,2016,Transport,162.9
+Rest of North Island,2019,Transport,200.5
+Canterbury,2007,Transport,126
+Canterbury,2010,Transport,132
+Canterbury,2013,Transport,176.8
+Canterbury,2016,Transport,210.7
+Canterbury,2019,Transport,205.3
+Rest of South Island,2007,Transport,143.9
+Rest of South Island,2010,Transport,115
+Rest of South Island,2013,Transport,148.2
+Rest of South Island,2016,Transport,178
+Rest of South Island,2019,Transport,198.7
+Auckland,2007,Communication,32.7
+Auckland,2010,Communication,38.3
+Auckland,2013,Communication,37.6
+Auckland,2016,Communication,37.2
+Auckland,2019,Communication,45.9
+Wellington,2007,Communication,34.3
+Wellington,2010,Communication,40.6
+Wellington,2013,Communication,39.6
+Wellington,2016,Communication,33.9
+Wellington,2019,Communication,42
+Rest of North Island,2007,Communication,29.1
+Rest of North Island,2010,Communication,32.6
+Rest of North Island,2013,Communication,32.7
+Rest of North Island,2016,Communication,34.1
+Rest of North Island,2019,Communication,33.8
+Canterbury,2007,Communication,29.1
+Canterbury,2010,Communication,35
+Canterbury,2013,Communication,36.1
+Canterbury,2016,Communication,36.2
+Canterbury,2019,Communication,35.6
+Rest of South Island,2007,Communication,28.4
+Rest of South Island,2010,Communication,31.6
+Rest of South Island,2013,Communication,33.7
+Rest of South Island,2016,Communication,33
+Rest of South Island,2019,Communication,35.4
+Auckland,2007,Recreation and culture,106.7
+Auckland,2010,Recreation and culture,91
+Auckland,2013,Recreation and culture,105.6
+Auckland,2016,Recreation and culture,121.6
+Auckland,2019,Recreation and culture,131
+Wellington,2007,Recreation and culture,112.4
+Wellington,2010,Recreation and culture,121.5
+Wellington,2013,Recreation and culture,124.1
+Wellington,2016,Recreation and culture,119.9
+Wellington,2019,Recreation and culture,148.9
+Rest of North Island,2007,Recreation and culture,89.1
+Rest of North Island,2010,Recreation and culture,92.3
+Rest of North Island,2013,Recreation and culture,99.5
+Rest of North Island,2016,Recreation and culture,107.1
+Rest of North Island,2019,Recreation and culture,129.1
+Canterbury,2007,Recreation and culture,96.1
+Canterbury,2010,Recreation and culture,113.8
+Canterbury,2013,Recreation and culture,121.2
+Canterbury,2016,Recreation and culture,118.9
+Canterbury,2019,Recreation and culture,126.4
+Rest of South Island,2007,Recreation and culture,107.3
+Rest of South Island,2010,Recreation and culture,98.2
+Rest of South Island,2013,Recreation and culture,106.3
+Rest of South Island,2016,Recreation and culture,111.6
+Rest of South Island,2019,Recreation and culture,115.6
+Auckland,2007,Education,15.9
+Auckland,2010,Education,20.5
+Auckland,2013,Education,24.4
+Auckland,2016,Education,32.7
+Auckland,2019,Education,29.6
+Wellington,2007,Education,10.5
+Wellington,2010,Education,23.9
+Wellington,2013,Education,23.1
+Wellington,2016,Education,22.6
+Wellington,2019,Education,12.9
+Rest of North Island,2007,Education,7.5
+Rest of North Island,2010,Education,10
+Rest of North Island,2013,Education,12.7
+Rest of North Island,2016,Education,16.4
+Rest of North Island,2019,Education,14.9
+Canterbury,2007,Education,20.1
+Canterbury,2010,Education,21
+Canterbury,2013,Education,21.7
+Canterbury,2016,Education,18.8
+Canterbury,2019,Education,20.4
+Rest of South Island,2007,Education,9.8
+Rest of South Island,2010,Education,13.2
+Rest of South Island,2013,Education,9.9
+Rest of South Island,2016,Education,7.6
+Rest of South Island,2019,Education,9.3
+Auckland,2007,Miscellaneous goods and services,101.7
+Auckland,2010,Miscellaneous goods and services,97.2
+Auckland,2013,Miscellaneous goods and services,108.5
+Auckland,2016,Miscellaneous goods and services,131.1
+Auckland,2019,Miscellaneous goods and services,125.3
+Wellington,2007,Miscellaneous goods and services,97.8
+Wellington,2010,Miscellaneous goods and services,108.8
+Wellington,2013,Miscellaneous goods and services,114.2
+Wellington,2016,Miscellaneous goods and services,108.2
+Wellington,2019,Miscellaneous goods and services,114.1
+Rest of North Island,2007,Miscellaneous goods and services,82.9
+Rest of North Island,2010,Miscellaneous goods and services,83.9
+Rest of North Island,2013,Miscellaneous goods and services,99.3
+Rest of North Island,2016,Miscellaneous goods and services,102.3
+Rest of North Island,2019,Miscellaneous goods and services,103.1
+Canterbury,2007,Miscellaneous goods and services,87.6
+Canterbury,2010,Miscellaneous goods and services,90.8
+Canterbury,2013,Miscellaneous goods and services,105.2
+Canterbury,2016,Miscellaneous goods and services,106.9
+Canterbury,2019,Miscellaneous goods and services,122
+Rest of South Island,2007,Miscellaneous goods and services,85.4
+Rest of South Island,2010,Miscellaneous goods and services,90.4
+Rest of South Island,2013,Miscellaneous goods and services,88
+Rest of South Island,2016,Miscellaneous goods and services,94.1
+Rest of South Island,2019,Miscellaneous goods and services,105.8
+Auckland,2007,Other expenditure,132.8
+Auckland,2010,Other expenditure,131.7
+Auckland,2013,Other expenditure,143
+Auckland,2016,Other expenditure,183.8
+Auckland,2019,Other expenditure,165.6
+Wellington,2007,Other expenditure,135.8
+Wellington,2010,Other expenditure,122.2
+Wellington,2013,Other expenditure,140.6
+Wellington,2016,Other expenditure,134.6
+Wellington,2019,Other expenditure,145
+Rest of North Island,2007,Other expenditure,86.4
+Rest of North Island,2010,Other expenditure,91.6
+Rest of North Island,2013,Other expenditure,91.2
+Rest of North Island,2016,Other expenditure,125.9
+Rest of North Island,2019,Other expenditure,106.2
+Canterbury,2007,Other expenditure,102.8
+Canterbury,2010,Other expenditure,96.9
+Canterbury,2013,Other expenditure,120.5
+Canterbury,2016,Other expenditure,125.3
+Canterbury,2019,Other expenditure,150.4
+Rest of South Island,2007,Other expenditure,89.5
+Rest of South Island,2010,Other expenditure,96.6
+Rest of South Island,2013,Other expenditure,88.6
+Rest of South Island,2016,Other expenditure,102.3
+Rest of South Island,2019,Other expenditure,91.6
+Auckland,2007,"Sales, trade-ins and refunds",-21.5
+Auckland,2010,"Sales, trade-ins and refunds",-18.3
+Auckland,2013,"Sales, trade-ins and refunds",-21.3
+Auckland,2016,"Sales, trade-ins and refunds",-21.7
+Auckland,2019,"Sales, trade-ins and refunds",-46.7
+Wellington,2007,"Sales, trade-ins and refunds",-30.6
+Wellington,2010,"Sales, trade-ins and refunds",-15.5
+Wellington,2013,"Sales, trade-ins and refunds",-24.3
+Wellington,2016,"Sales, trade-ins and refunds",-28.6
+Wellington,2019,"Sales, trade-ins and refunds",-37.1
+Rest of North Island,2007,"Sales, trade-ins and refunds",-31.8
+Rest of North Island,2010,"Sales, trade-ins and refunds",-21.9
+Rest of North Island,2013,"Sales, trade-ins and refunds",-24.8
+Rest of North Island,2016,"Sales, trade-ins and refunds",-47.8
+Rest of North Island,2019,"Sales, trade-ins and refunds",-39.7
+Canterbury,2007,"Sales, trade-ins and refunds",-18.7
+Canterbury,2010,"Sales, trade-ins and refunds",-28.6
+Canterbury,2013,"Sales, trade-ins and refunds",-70.6
+Canterbury,2016,"Sales, trade-ins and refunds",-105.4
+Canterbury,2019,"Sales, trade-ins and refunds",-33.3
+Rest of South Island,2007,"Sales, trade-ins and refunds",-22.2
+Rest of South Island,2010,"Sales, trade-ins and refunds",-23
+Rest of South Island,2013,"Sales, trade-ins and refunds",-21.1
+Rest of South Island,2016,"Sales, trade-ins and refunds",-35.2
+Rest of South Island,2019,"Sales, trade-ins and refunds",-35.9
