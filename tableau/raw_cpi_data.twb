@@ -1,0 +1,405 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20211.21.0420.1112                               -->
+<workbook original-version='18.1' source-build='2021.1.1 (20211.21.0420.1112)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Data (cpi_data)' inline='true' name='federated.0p3wr5a1k8irkq1e0sc6v1a009fw' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='cpi_data' name='excel-direct.0i99cl2153072s18qtqlx1j5hlxr'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/suchiundevia/Documents/infosys_722_assignment/iteration_03/datasets/cpi_data.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0i99cl2153072s18qtqlx1j5hlxr' name='Data' table='[Data$]' type='table'>
+          <columns gridOrigin='A1:F34:no:A1:F34:0' header='yes' outcome='2'>
+            <column datatype='date' name='cpi_series_id' ordinal='0' />
+            <column datatype='integer' name='cpi_year' ordinal='1' />
+            <column datatype='integer' name='cpi_quarter_01' ordinal='2' />
+            <column datatype='integer' name='cpi_quarter_02' ordinal='3' />
+            <column datatype='integer' name='cpi_quarter_03' ordinal='4' />
+            <column datatype='integer' name='cpi_quarter_04' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0i99cl2153072s18qtqlx1j5hlxr' name='Data' table='[Data$]' type='table'>
+          <columns gridOrigin='A1:F34:no:A1:F34:0' header='yes' outcome='2'>
+            <column datatype='date' name='cpi_series_id' ordinal='0' />
+            <column datatype='integer' name='cpi_year' ordinal='1' />
+            <column datatype='integer' name='cpi_quarter_01' ordinal='2' />
+            <column datatype='integer' name='cpi_quarter_02' ordinal='3' />
+            <column datatype='integer' name='cpi_quarter_03' ordinal='4' />
+            <column datatype='integer' name='cpi_quarter_04' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Data]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:F34:no:A1:F34:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cpi_series_id</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[cpi_series_id]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>cpi_series_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_8B424C4E168B4848A5BF600EE66F8E15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cpi_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cpi_year]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>cpi_year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_8B424C4E168B4848A5BF600EE66F8E15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cpi_quarter_01</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cpi_quarter_01]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>cpi_quarter_01</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_8B424C4E168B4848A5BF600EE66F8E15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cpi_quarter_02</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cpi_quarter_02]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>cpi_quarter_02</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_8B424C4E168B4848A5BF600EE66F8E15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cpi_quarter_03</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cpi_quarter_03]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>cpi_quarter_03</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_8B424C4E168B4848A5BF600EE66F8E15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cpi_quarter_04</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cpi_quarter_04]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>cpi_quarter_04</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_8B424C4E168B4848A5BF600EE66F8E15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='Data' datatype='table' name='[__tableau_internal_object_id__].[Data_8B424C4E168B4848A5BF600EE66F8E15]' role='measure' type='quantitative' />
+      <column caption='Cpi Quarter 01' datatype='integer' name='[cpi_quarter_01]' role='dimension' type='quantitative' />
+      <column caption='Cpi Quarter 02' datatype='integer' name='[cpi_quarter_02]' role='dimension' type='quantitative' />
+      <column caption='Cpi Quarter 03' datatype='integer' name='[cpi_quarter_03]' role='dimension' type='quantitative' />
+      <column caption='Cpi Quarter 04' datatype='integer' name='[cpi_quarter_04]' role='dimension' type='quantitative' />
+      <column caption='Cpi Series Id' datatype='date' name='[cpi_series_id]' role='dimension' type='ordinal' />
+      <column caption='Cpi Year' datatype='integer' name='[cpi_year]' role='dimension' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Data' id='Data_8B424C4E168B4848A5BF600EE66F8E15'>
+            <properties context=''>
+              <relation connection='excel-direct.0i99cl2153072s18qtqlx1j5hlxr' name='Data' table='[Data$]' type='table'>
+                <columns gridOrigin='A1:F34:no:A1:F34:0' header='yes' outcome='2'>
+                  <column datatype='date' name='cpi_series_id' ordinal='0' />
+                  <column datatype='integer' name='cpi_year' ordinal='1' />
+                  <column datatype='integer' name='cpi_quarter_01' ordinal='2' />
+                  <column datatype='integer' name='cpi_quarter_02' ordinal='3' />
+                  <column datatype='integer' name='cpi_quarter_03' ordinal='4' />
+                  <column datatype='integer' name='cpi_quarter_04' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Consumer Price Index per Year'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (cpi_data)' name='federated.0p3wr5a1k8irkq1e0sc6v1a009fw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0p3wr5a1k8irkq1e0sc6v1a009fw'>
+            <column caption='Cpi Quarter 01' datatype='integer' name='[cpi_quarter_01]' role='dimension' type='quantitative' />
+            <column caption='Cpi Year' datatype='integer' name='[cpi_year]' role='dimension' type='quantitative' />
+            <column-instance column='[cpi_quarter_01]' derivation='None' name='[none:cpi_quarter_01:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[cpi_year]' derivation='None' name='[none:cpi_year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0p3wr5a1k8irkq1e0sc6v1a009fw].[none:cpi_quarter_01:qk]' scope='rows' value='Consumer Price Index' />
+            <format attr='title' class='0' field='[federated.0p3wr5a1k8irkq1e0sc6v1a009fw].[none:cpi_year:qk]' scope='cols' value='Year' />
+            <format attr='tick-color' field='[federated.0p3wr5a1k8irkq1e0sc6v1a009fw].[none:cpi_year:qk]' value='#ffffff' />
+            <format attr='tick-color' field='[federated.0p3wr5a1k8irkq1e0sc6v1a009fw].[none:cpi_quarter_01:qk]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' field='[federated.0p3wr5a1k8irkq1e0sc6v1a009fw].[none:cpi_year:qk]' value='#000000' />
+            <format attr='background-color' field='[federated.0p3wr5a1k8irkq1e0sc6v1a009fw].[none:cpi_quarter_01:qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.0p3wr5a1k8irkq1e0sc6v1a009fw].[none:cpi_year:qk]' value='11' />
+            <format attr='color' field='[federated.0p3wr5a1k8irkq1e0sc6v1a009fw].[none:cpi_year:qk]' value='#ffffff' />
+            <format attr='font-size' field='[federated.0p3wr5a1k8irkq1e0sc6v1a009fw].[none:cpi_quarter_01:qk]' value='11' />
+            <format attr='color' field='[federated.0p3wr5a1k8irkq1e0sc6v1a009fw].[none:cpi_quarter_01:qk]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#8cd17d' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#59a14f' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0p3wr5a1k8irkq1e0sc6v1a009fw].[none:cpi_quarter_01:qk]</rows>
+        <cols>[federated.0p3wr5a1k8irkq1e0sc6v1a009fw].[none:cpi_year:qk]</cols>
+      </table>
+      <simple-id uuid='{75661E55-67E9-4DF4-BDC4-20640E1EF334}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Consumer Price Index per Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0p3wr5a1k8irkq1e0sc6v1a009fw].[none:cpi_quarter_01:qk]</field>
+            <field>[federated.0p3wr5a1k8irkq1e0sc6v1a009fw].[none:cpi_quarter_02:qk]</field>
+            <field>[federated.0p3wr5a1k8irkq1e0sc6v1a009fw].[none:cpi_quarter_03:qk]</field>
+            <field>[federated.0p3wr5a1k8irkq1e0sc6v1a009fw].[none:cpi_quarter_04:qk]</field>
+            <field>[federated.0p3wr5a1k8irkq1e0sc6v1a009fw].[none:cpi_year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{44591F0A-069F-45CE-8E46-D3E44604A415}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='Consumer Price Index per Year' width='384'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
